@@ -47,3 +47,6 @@ summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weig
 .retro header.bar{background:#c0deed;color:#0b2a3c;border-radius:.6rem;padding:.4rem .8rem}
 footer{margin-top:2.5rem;padding-bottom:2rem;color:var(--muted);border-top:1px solid var(--line)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+[hidden]{display:none!important}
+button[aria-disabled="true"]{border-style:dashed;cursor:progress}
+.feed h5{margin:0 0 .2rem;font-size:1.1rem}
