@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feditext demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Feditext in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Feditext</h1>
+<p class="what">The real app is an iPhone client for Mastodon and other fediverse servers.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Boost and favourite posts, or write your own. Turn on the content warning to hide your post behind a short summary. New posts go at the end of the timeline.</p>
+<h3 id="tl-h">Home timeline (newest at the bottom)</h3>
+<ul class="feed" id="tl"></ul>
+<h3 id="c-h">New post</h3>
+<form id="f">
+<label class="check" for="cwon"><input type="checkbox" id="cwon">Add a content warning</label>
+<div id="cwbox" hidden>
+<label for="cw">Content warning summary</label>
+<input type="text" id="cw" autocomplete="off" maxlength="80">
+</div>
+<label for="post">What is on your mind?</label>
+<textarea id="post" rows="3" maxlength="500"></textarea>
+<p class="note">Characters left: <span id="left">500</span></p>
+<div class="row"><button class="primary" type="submit">Publish</button></div>
+</form>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/feditext">Carter's fork: 2three1y/feditext</a></li><li><a href="https://github.com/feditext/feditext">Original project: feditext/feditext</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="feditext.js"></script>
+</body>
+</html>

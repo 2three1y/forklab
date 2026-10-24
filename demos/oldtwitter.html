@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OldTwitter demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of OldTwitter in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="retro">
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>OldTwitter</h1>
+<p class="what">The real app is a browser extension that brings back the old Twitter layout from around 2015.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<header class="bar"><p><strong>twitter, but it is 2015</strong></p></header>
+<p>Write a tweet in 140 characters or fewer, and like or retweet the classics. New tweets go at the end of the timeline.</p>
+<form id="f">
+<label for="tw">What is happening?</label>
+<textarea id="tw" rows="2" maxlength="140"></textarea>
+<p class="note">Characters left: <span id="left">140</span></p>
+<div class="row"><button class="primary" type="submit">Tweet</button></div>
+</form>
+<h3 id="tl-h">Timeline (newest at the bottom)</h3>
+<ul class="feed" id="tl"></ul>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/OldTwitter">Carter's fork: 2three1y/OldTwitter</a></li><li><a href="https://github.com/dimdenGD/OldTwitter">Original project: dimdenGD/OldTwitter</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="oldtwitter.js"></script>
+</body>
+</html>

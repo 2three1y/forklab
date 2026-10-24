@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Misskey demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Misskey in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Misskey</h1>
+<p class="what">The real app is a fediverse social server where people post notes, react with emoji and renote each other.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Post a note, tap the emoji reaction buttons, or renote something. New notes go at the end of the timeline.</p>
+<h3 id="tl-h">Timeline (newest at the bottom)</h3>
+<ul class="feed" id="tl"></ul>
+<h3 id="c-h">Write a note</h3>
+<form id="f">
+<label for="note">Note</label>
+<textarea id="note" rows="3" maxlength="300"></textarea>
+<div class="row"><button class="primary" type="submit">Post note</button></div>
+</form>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/Misskey">Carter's fork: 2three1y/Misskey</a></li><li><a href="https://github.com/misskey-dev/misskey">Original project: misskey-dev/misskey</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="misskey.js"></script>
+</body>
+</html>

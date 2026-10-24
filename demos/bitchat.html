@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bitchat demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of bitchat in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>bitchat</h1>
+<p class="what">The real app is an iPhone and Mac chat app that talks to nearby phones over Bluetooth mesh, no internet or accounts needed.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>You are in the <strong>#mesh</strong> channel with 3 pretend phones nearby. Type a message, or try <strong>/nick NewName</strong>, <strong>/who</strong>, <strong>/help</strong> or <strong>/clear</strong>. Replies show up at the end of the message list after a second or two.</p>
+<h3 id="peers-h">Nearby peers</h3>
+<ul id="peers"></ul>
+<h3 id="msgs-h">Messages (newest at the bottom)</h3>
+<ul class="feed" id="msgs"></ul>
+<form id="f" class="row-form">
+<label for="msg">Message as <span id="nick">you</span></label>
+<input type="text" id="msg" autocomplete="off" enterkeyhint="send">
+<div class="row"><button class="primary" type="submit">Send</button></div>
+</form>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/bitchat">Carter's fork: 2three1y/bitchat</a></li><li><a href="https://github.com/permissionlesstech/bitchat">Original project: permissionlesstech/bitchat</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="bitchat.js"></script>
+</body>
+</html>

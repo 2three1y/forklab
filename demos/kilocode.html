@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kilo Code demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Kilo Code in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Kilo Code</h1>
+<p class="what">The real app is an AI coding agent that lives in your code editor and writes code from plain requests.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Type what you want built and press Generate. A script picks a matching snippet. Try words like <strong>button</strong>, <strong>fizzbuzz</strong>, <strong>sort</strong>, <strong>todo</strong>, <strong>joke</strong> or <strong>hello</strong>.</p>
+<form id="f">
+<label for="ask">What should I build?</label>
+<input type="text" id="ask" autocomplete="off" enterkeyhint="go">
+<div class="row"><button class="primary" type="submit">Generate</button></div>
+</form>
+<h3 id="log-h">Agent log (newest at the bottom)</h3>
+<ul class="feed" id="log"></ul>
+<label for="code">Generated code (read only)</label>
+<textarea id="code" class="code" readonly rows="12" spellcheck="false">// Your code will show up here.</textarea>
+<div class="row"><button type="button" id="copy">Copy code</button></div>
+<p class="note" id="copied"></p>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/kilocode">Carter's fork: 2three1y/kilocode</a></li><li><a href="https://github.com/Kilo-Org/kilocode">Original project: Kilo-Org/kilocode</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="kilocode.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrapheneOS Camera, Messaging and PDF Viewer demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of GrapheneOS Camera, Messaging and PDF Viewer in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>GrapheneOS Camera, Messaging and PDF Viewer</h1>
+<p class="what">The real apps are the privacy-focused camera, text messaging and PDF viewer apps from the GrapheneOS Android project.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<h3 id="cam-h">Camera</h3>
+<p>Pick a mode and take some pretend photos. Each photo is added to the end of the gallery list.</p>
+<div class="viewfinder" id="vf"><p id="scene">Viewfinder: a houseplant striking a dramatic pose.</p><div class="flash" id="flash"></div></div>
+<label for="mode">Camera mode</label>
+<select id="mode"><option>Photo</option><option>Portrait</option><option>Night</option><option>Selfie</option></select>
+<div class="row"><button type="button" class="primary" id="shutter">Take photo</button></div>
+<p class="status">Photos taken: <span id="count">0</span></p>
+<h4 id="gal-h">Gallery (newest at the bottom)</h4>
+<ul class="feed" id="gallery"></ul>
+
+<h3 id="sms-h">Messaging</h3>
+<p>A text thread with Pizza Palace. Send a message and they reply.</p>
+<h4 id="thread-h">Thread with Pizza Palace (newest at the bottom)</h4>
+<ul class="feed" id="thread"></ul>
+<form id="smsf">
+<label for="sms">Text message</label>
+<input type="text" id="sms" autocomplete="off" enterkeyhint="send">
+<div class="row"><button class="primary" type="submit">Send text</button></div>
+</form>
+
+<h3 id="pdf-h">PDF Viewer</h3>
+<p>A tiny pretend document. Use the page buttons to flip through it.</p>
+<div class="row">
+<button type="button" id="pgprev">Previous page</button>
+<button type="button" id="pgnext">Next page</button>
+<button type="button" id="zoomout">Smaller text</button>
+<button type="button" id="zoomin">Bigger text</button>
+</div>
+<p class="status" id="pginfo">Page 1 of 4</p>
+<div class="page" id="page"></div>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/Camera">Carter's fork: 2three1y/Camera</a></li><li><a href="https://github.com/GrapheneOS/Camera">Original project: GrapheneOS/Camera</a></li><li><a href="https://github.com/2three1y/Messaging">Carter's fork: 2three1y/Messaging</a></li><li><a href="https://github.com/GrapheneOS/Messaging">Original project: GrapheneOS/Messaging</a></li><li><a href="https://github.com/2three1y/PdfViewer">Carter's fork: 2three1y/PdfViewer</a></li><li><a href="https://github.com/GrapheneOS/PdfViewer">Original project: GrapheneOS/PdfViewer</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="grapheneos.js"></script>
+</body>
+</html>

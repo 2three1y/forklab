@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hugging Face Chat UI demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Hugging Face Chat UI in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Hugging Face Chat UI</h1>
+<p class="what">The real app is the open source chat website behind HuggingChat, for talking to open AI models.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Chat with a pretend model. It uses canned replies, so it is very consistent and not very smart. Replies go at the end of the chat.</p>
+<label for="model">Model</label>
+<select id="model"><option>Tiny Toaster 1B</option><option>Sir Chats-a-Lot 7B</option><option>Sandwich Oracle 70B</option></select>
+<div class="row"><button type="button" id="newchat">New chat</button></div>
+<h3 id="chat-h">Chat (newest at the bottom)</h3>
+<ul class="feed" id="chat"></ul>
+<form id="f">
+<label for="q">Ask anything</label>
+<textarea id="q" rows="2"></textarea>
+<div class="row"><button class="primary" type="submit">Send</button></div>
+</form>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/chat-ui">Carter's fork: 2three1y/chat-ui</a></li><li><a href="https://github.com/huggingface/chat-ui">Original project: huggingface/chat-ui</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="chat-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TalkBack demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of TalkBack in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>TalkBack</h1>
+<p class="what">The real app is the screen reader built into Android phones.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Practice moving through a fake settings screen. Use the buttons to move the highlight, then read the line under them to see what a screen reader would say.</p>
+<div class="row">
+<button type="button" id="prev">Previous</button>
+<button type="button" id="next">Next</button>
+<button type="button" class="primary" id="act">Activate</button>
+</div>
+<p class="status" id="said">Screen reader says: nothing yet. Press Next to start.</p>
+<p class="note">Item <span id="pos">0</span> of <span id="total">0</span>. Moves so far: <span id="moves">0</span>.</p>
+<h3 id="items-h">Pretend screen</h3>
+<ul class="items" id="items"></ul>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/talkback">Carter's fork: 2three1y/talkback</a></li><li><a href="https://github.com/google/talkback">Original project: google/talkback</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="talkback.js"></script>
+</body>
+</html>
