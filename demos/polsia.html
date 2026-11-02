@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polsia demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Polsia in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Polsia</h1>
+<p class="what">The real app is a set of nine AI agents that try to run a small business by themselves: planning, social posts, emails, ads, support and money tracking.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<p class="note">The real one can post, send emails and spend money on ads once its sandbox mode is turned off. This demo is always in sandbox mode.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Nine pretend agents run a pretend company called Sock Finder Inc. Choose Run on any agent, or run the morning plan to start the day. What each agent did goes at the end of the activity log.</p>
+<p class="status">Sandbox mode: on. Always on in this demo, so nothing is really posted, emailed or spent.</p>
+<div class="row"><button type="button" class="primary" id="morning">Run morning plan</button></div>
+<h3 id="agents-h">Agents</h3>
+<ul class="items" id="agents"></ul>
+<h3 id="log-h">Activity log (newest at the bottom)</h3>
+<ul class="feed" id="log"></ul>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/Polsia">Carter's fork: 2three1y/Polsia</a></li><li><a href="https://github.com/PolsiaAI/Polsia">Original project: PolsiaAI/Polsia</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="polsia.js"></script>
+</body>
+</html>

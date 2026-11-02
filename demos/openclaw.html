@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenClaw demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of OpenClaw in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>OpenClaw</h1>
+<p class="what">The real app is a personal AI assistant you run on your own computer, and you talk to it from chat apps like WhatsApp, Telegram or Discord.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<p class="note">The real assistant can run commands and touch files on the computer it lives on, so it is powerful and needs care. This pretend one can only talk.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Pick which chat app you are texting from, then give the lobster assistant a job. Try asking for a reminder, a to-do list, the weather, or a joke. Replies go at the end of the chat.</p>
+<label for="app">Chat app</label>
+<select id="app"><option>WhatsApp</option><option>Telegram</option><option>Discord</option><option>Signal</option><option>iMessage</option></select>
+<h3 id="chat-h">Chat with the lobster (newest at the bottom)</h3>
+<ul class="feed" id="chat"></ul>
+<form id="f">
+<label for="q">Message</label>
+<textarea id="q" rows="2"></textarea>
+<div class="row"><button class="primary" type="submit">Send</button></div>
+</form>
+<h3 id="todo-h">To-do list</h3>
+<ul id="todo"><li>Feed the pretend fish</li></ul>
+<details>
+<summary>What the pretend lobster can do</summary>
+<ul><li>Set a reminder: say “remind me to…”</li><li>Add to your to-do list: say “add … to my list”</li><li>Check the weather, offline and made up</li><li>Tell a joke</li></ul>
+</details>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/openclaw">Carter's fork: 2three1y/openclaw</a></li><li><a href="https://github.com/openclaw/openclaw">Original project: openclaw/openclaw</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="openclaw.js"></script>
+</body>
+</html>

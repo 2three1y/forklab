@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OldTweetDeck demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of OldTweetDeck in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>OldTweetDeck</h1>
+<p class="what">The real app is a browser extension that brings back the old TweetDeck, where you watch many timelines side by side in columns.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>TweetDeck shows many timelines at once, each in its own column. Each column below is a heading, so you can jump between them. Tweets you write go at the end of the Home column. You can also add a column.</p>
+<form id="f">
+<label for="tw">New tweet</label>
+<textarea id="tw" rows="2" maxlength="280"></textarea>
+<p class="note">Characters left: <span id="left">280</span></p>
+<div class="row"><button class="primary" type="submit">Tweet</button></div>
+</form>
+<label for="addpick">Column to add</label>
+<select id="addpick"><option value="cats">Search: cats</option><option value="games">List: Gaming news</option><option value="likes">Likes</option></select>
+<div class="row"><button type="button" id="add">Add column</button></div>
+<div id="cols"></div>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/OldTweetDeck">Carter's fork: 2three1y/OldTweetDeck</a></li><li><a href="https://github.com/dimdenGD/OldTweetDeck">Original project: dimdenGD/OldTweetDeck</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="oldtweetdeck.js"></script>
+</body>
+</html>

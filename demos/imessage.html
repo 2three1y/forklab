@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mautrix-imessage demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of mautrix-imessage in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>mautrix-imessage</h1>
+<p class="what">The real app is a bridge that connects iMessage to Matrix, so you can text iPhone people from a Matrix chat app like Element.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<p class="note">The real bridge needs a Mac (or a jailbroken iPhone) that stays on all the time, plus a Matrix server.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Two sides of one chat with Mom. Pick which side you are sending from. Each message shows up on that side first, then the pretend bridge copies it to the other side. Mom answers from her iPhone and the bridge carries her reply to Matrix too.</p>
+<form id="f">
+<label for="from">Send from</label>
+<select id="from"><option value="matrix">Matrix (Element app)</option><option value="imsg">iPhone (iMessage)</option></select>
+<label for="m">Message</label>
+<textarea id="m" rows="2"></textarea>
+<div class="row"><button class="primary" type="submit">Send</button></div>
+</form>
+<h3 id="mx-h">Matrix side: Element app (newest at the bottom)</h3>
+<ul class="feed" id="mx"></ul>
+<h3 id="im-h">iMessage side: Messages app (newest at the bottom)</h3>
+<ul class="feed" id="im"></ul>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/imessage">Carter's fork: 2three1y/imessage</a></li><li><a href="https://github.com/mautrix/imessage">Original project: mautrix/imessage</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="imessage.js"></script>
+</body>
+</html>

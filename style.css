@@ -50,3 +50,10 @@ footer{margin-top:2.5rem;padding-bottom:2rem;color:var(--muted);border-top:1px s
 [hidden]{display:none!important}
 button[aria-disabled="true"]{border-style:dashed;cursor:progress}
 .feed h5{margin:0 0 .2rem;font-size:1.1rem}
+.appbar{background:var(--accent);color:var(--accent-fg);border-radius:.6rem;padding:.4rem .8rem}
+.appbar p{margin:.2rem 0}
+table{border-collapse:collapse;width:100%;margin:.5rem 0;background:var(--card)}
+caption{text-align:left;font-weight:700;padding:.3rem 0}
+th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left}
+.feed h4{margin:0 0 .2rem;font-size:1.1rem}
+select{max-width:100%}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TweetXer demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of TweetXer in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>TweetXer</h1>
+<p class="what">The real app is a script that deletes all your tweets for free, using the data export you download from X.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<p class="note">The real tool deletes tweets for good, and there is no undo. Here only made-up tweets get deleted.</p>
+<h2 id="demo-h">Try it</h2>
+<p>First load the pretend archive. Then start deleting and the progress count updates as it goes. You can pause any time.</p>
+<div class="row">
+<button type="button" id="load">Load pretend archive</button>
+<button type="button" class="primary" id="go">Start deleting</button>
+<button type="button" id="pause" aria-pressed="false">Pause</button>
+<button type="button" id="reset">Start over</button>
+</div>
+<p class="status" role="status" id="st">No archive loaded yet.</p>
+<details>
+<summary>Tweets left in the archive</summary>
+<ul class="feed" id="left"></ul>
+</details>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/tweetXer">Carter's fork: 2three1y/tweetXer</a></li><li><a href="https://github.com/lucahammer/tweetXer">Original project: lucahammer/tweetXer</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="tweetxer.js"></script>
+</body>
+</html>

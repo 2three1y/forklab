@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neuroshield demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Neuroshield in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Neuroshield</h1>
+<p class="what">The real app is a Chrome extension that protects people with photosensitive epilepsy by spotting flashing and strobing on websites and blocking it.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<p class="note">This page never flashes or blinks. The pretend videos are only numbers: how many flashes happen each second.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Pick a pretend video and a protection level, then play it. Each second, the shield counts the flashes. Too many flashes in one second and the shield dims and pauses the video. What happens is written in the log below.</p>
+<label for="vid">Pretend video</label>
+<select id="vid"><option value="calm">Calm forest walk</option><option value="concert">Concert with strobe lights</option><option value="cartoon">Cartoon explosion scene</option></select>
+<label for="lvl">Protection level</label>
+<select id="lvl"><option value="2">Strict: stop at 2 or more flashes a second</option><option value="3" selected>Normal: stop at 3 or more flashes a second</option><option value="5">Relaxed: stop at 5 or more flashes a second</option></select>
+<div class="row"><button type="button" class="primary" id="play">Play</button><button type="button" id="show" hidden>Show the video anyway</button></div>
+<p class="status" role="status" id="st">Shield is on. Nothing is playing.</p>
+<h3 id="log-h">Shield log (newest at the bottom)</h3>
+<ul class="feed" id="log"></ul>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/Neuroshield">Carter's fork: 2three1y/Neuroshield</a></li><li><a href="https://github.com/OMARVII/Neuroshield">Original project: OMARVII/Neuroshield</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="neuroshield.js"></script>
+</body>
+</html>

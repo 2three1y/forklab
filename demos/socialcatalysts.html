@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Catalysts demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Social Catalysts in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Social Catalysts</h1>
+<p class="what">The real project is the data and code from a Facebook research paper about social catalysts: people whose posts get their friends talking to each other, even friends who did not know each other.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Five made-up friends post things, and you can join in. A post counts as a catalyst post when two of the poster's friends end up talking to each other in the comments. Find the social catalysts, then make a post as yourself and see your score change.</p>
+<table>
+<caption>Pretend friend group</caption>
+<thead><tr><th scope="col">Name</th><th scope="col">Posts</th><th scope="col">Catalyst posts</th></tr></thead>
+<tbody id="tb"></tbody>
+</table>
+<div class="row"><button type="button" class="primary" id="find">Find the social catalysts</button></div>
+<label for="kind">Make a post as yourself</label>
+<select id="kind"><option value="q">Ask a question: best pizza topping?</option><option value="p">Share a photo of your lunch</option><option value="n">Say you got a new phone</option></select>
+<div class="row"><button type="button" id="post">Post it</button></div>
+<h3 id="res-h">Results (newest at the bottom)</h3>
+<ul class="feed" id="res"></ul>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/social-catalysts">Carter's fork: 2three1y/social-catalysts</a></li><li><a href="https://github.com/facebookresearch/social-catalysts">Original project: facebookresearch/social-catalysts</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="socialcatalysts.js"></script>
+</body>
+</html>
