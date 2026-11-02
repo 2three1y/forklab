@@ -57,3 +57,4 @@ caption{text-align:left;font-weight:700;padding:.3rem 0}
 th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left}
 .feed h4{margin:0 0 .2rem;font-size:1.1rem}
 select{max-width:100%}
+.feed pre{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95rem;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--bg);border:1px solid var(--line);border-radius:.5rem;padding:.5rem .65rem;margin:.4rem 0 0}

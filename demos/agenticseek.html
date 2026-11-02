@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgenticSeek demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of AgenticSeek in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>AgenticSeek</h1>
+<p class="what">The real project is a fully local AI agent. You give it a task and it makes a plan, browses the web in a real browser, and writes and runs code, all on your own computer.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<p class="note">This fork is an old copy. Don't run it; use the official project.</p>
+<h2 id="demo-h">Try it</h2>
+<p>Give the pretend agent a task. A router picks which agent does the job: the planner, the browser agent, the coder, the file agent or the casual chat agent. Each step shows up at the end of the list. The web pages, the code and its output are all made up.</p>
+<label for="ex">Example tasks</label>
+<select id="ex">
+<option value="" selected>Choose an example…</option>
+<option>Search the web for the best socks of 2026</option>
+<option>Write a Python number guessing game</option>
+<option>Plan a sock shop website and write its first page</option>
+<option>Find my homework file</option>
+<option>Delete every file on my computer</option>
+<option>How are you today?</option>
+</select>
+<div class="row">
+<button type="button" id="safe" aria-pressed="true">Safe mode</button>
+<button type="button" id="stop">Stop</button>
+<button type="button" id="clear">Clear</button>
+</div>
+<p class="status" role="status" id="st">The agent is waiting for a task.</p>
+<h3 id="log-h">What the agent is doing (newest at the bottom)</h3>
+<ul class="feed" id="log"></ul>
+<form id="f">
+<label for="q">Task for the agent</label>
+<textarea id="q" rows="2"></textarea>
+<div class="row"><button class="primary" type="submit">Run task</button></div>
+</form>
+<details>
+<summary>The pretend agents</summary>
+<ul><li>Planner: splits a big task into steps and hands them out</li><li>Browser agent: searches and reads pretend web pages</li><li>Coder: writes code and pretends to run it</li><li>File agent: looks through a pretend folder</li><li>Casual agent: just chats</li></ul>
+</details>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/agenticSeek">Carter's fork: 2three1y/agenticSeek</a></li><li><a href="https://github.com/Fosowl/agenticSeek">Original project: Fosowl/agenticSeek</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="agenticseek.js"></script>
+</body>
+</html>

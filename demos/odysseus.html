@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odysseus demo · Fork Lab</title>
+<meta name="description" content="A fan-made offline demo of Odysseus in Fork Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#demo-h">Skip to demo</a>
+<header><nav aria-label="Site"><a href="../">Back to Fork Lab</a></nav></header>
+<main>
+<h1>Odysseus</h1>
+<p class="what">The real project is PewDiePie's self-hosted AI workspace. You run it on your own server and get chat with local AI models, plus notes, tasks, an inbox and more, all in one place.</p>
+<p class="note">This is a fan-made pretend version, not the real app. Everything runs on this page with fake data. Nothing is sent anywhere.</p>
+<p class="note">This fork is an old copy. Don't run it; use the official project.</p>
+<h2 id="demo-h">Try it</h2>
+<p>A pretend workspace with a sidebar. Pick a page from the sidebar, switch between saved chats, or start a new one. In a chat, try “add a task to buy socks” or “note: toast is a lifestyle” and it lands in Tasks or Notes. Replies go at the end of the chat.</p>
+<div class="appbar"><p><strong>Odysseus</strong> · pretend workspace on your own server</p></div>
+<h3 id="side-h">Sidebar</h3>
+<div class="row">
+<button type="button" id="go-chat" aria-pressed="true">Chat</button>
+<button type="button" id="go-notes" aria-pressed="false">Notes</button>
+<button type="button" id="go-tasks" aria-pressed="false">Tasks</button>
+<button type="button" id="go-inbox" aria-pressed="false">Inbox</button>
+</div>
+<p>Saved chats:</p>
+<ul id="chats"></ul>
+<div class="row"><button type="button" id="newchat">New chat</button></div>
+<p class="status" role="status" id="st">Open: Chat, Sock Finder plans.</p>
+
+<section id="p-chat">
+<h3 id="chat-h">Chat: Sock Finder plans (newest at the bottom)</h3>
+<label for="model">Model</label>
+<select id="model"><option>Pretend Llama 8B (local)</option><option>Tiny Mistral 3B (local)</option><option>Potato 1B (very local)</option></select>
+<ul class="feed" id="chat"></ul>
+<form id="f">
+<label for="q">Message</label>
+<textarea id="q" rows="2"></textarea>
+<div class="row"><button class="primary" type="submit">Send</button></div>
+</form>
+</section>
+
+<section id="p-notes" hidden>
+<h3 id="notes-h">Notes</h3>
+<ul class="feed" id="notes"></ul>
+<form id="nf">
+<label for="nq">New note</label>
+<input type="text" id="nq">
+<div class="row"><button class="primary" type="submit">Save note</button></div>
+</form>
+</section>
+
+<section id="p-tasks" hidden>
+<h3 id="tasks-h">Tasks</h3>
+<ul class="items" id="tasks"></ul>
+</section>
+
+<section id="p-inbox" hidden>
+<h3 id="inbox-h">Inbox (sorted by the pretend AI)</h3>
+<ul class="feed" id="inbox"></ul>
+</section>
+
+<details>
+<summary>What the real workspace has</summary>
+<ul><li>Chat with local models or with AI services you add</li><li>An agent with tools, Deep Research and memory</li><li>Documents, notes, tasks and a calendar</li><li>An email inbox with AI sorting</li><li>A Cookbook that downloads and serves local models</li></ul>
+</details>
+
+<h2 id="links-h">The real thing</h2>
+<ul class="links"><li><a href="https://github.com/2three1y/odysseus">Carter's fork: 2three1y/odysseus</a></li><li><a href="https://github.com/pewdiepie-archdaemon/odysseus">Official project: pewdiepie-archdaemon/odysseus</a></li></ul>
+<p class="note">All credit for the real apps goes to their creators. This page has none of their code, just my own tiny imitation.</p>
+</main>
+<footer><p>Co-written with Tab. Part of Fork Lab, fan-made demos by Carter.</p></footer>
+<script src="lab.js"></script>
+<script src="odysseus.js"></script>
+</body>
+</html>
